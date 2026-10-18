@@ -1,4 +1,4 @@
-from roadmap_ml.config import ExperimentConfig
+from ml_toolkit.config import ExperimentConfig
 import pytest
 from typing import Any
 
