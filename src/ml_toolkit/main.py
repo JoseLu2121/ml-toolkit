@@ -1,9 +1,10 @@
 from config import ExperimentConfig
-from pipeline import generate_fake_csv
+from pipeline import generate_fake_csv, read_csv
 
 exp1 = ExperimentConfig("exp1", tags=("tag1", "tag2"))
 
 exp1.to_json("exp1.json")
 
+gen = read_csv("data.csv", ",")
 
-generate_fake_csv(100, "data.csv", 5, None, True)
+print(next(gen))
