@@ -28,3 +28,5 @@ mlruns/
 runs/
 outputs/
 .ipynb_checkpoints/
+*.csv
+*.json
